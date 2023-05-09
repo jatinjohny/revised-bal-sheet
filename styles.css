@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
 }
 
@@ -19,6 +19,7 @@ span[class~="sr-only"] {
 /* For screen Reader only --end-- */
 
 html {
+  box-sizing: border-box;
   font-size: 16px;
   font-family: Poppins, sans-serif;
 }
@@ -79,13 +80,13 @@ header .flex span:last-of-type {
 }
 
 #years span {
-  width: 4rem;
+  width: 4.5rem;
   text-align: right;
   font-weight: 600;
 }
 
 .table-wrap {
-  padding: 0.5rem calc(1rem + 2px);
+  padding: 0.5rem calc(0.5rem + 2px);
 }
 
 table {
@@ -124,9 +125,12 @@ tbody tr.data th {
 }
 
 tbody td {
-  width: 4rem;
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
   text-align: right;
-  padding-top: 0.5rem;
+  /* padding-top: 0.5rem; */
+  padding: 0.5rem 0.25rem 0;
   vertical-align: top;
 }
 
@@ -149,5 +153,9 @@ tr[class="total"] th {
 
 tr[class="total"] td {
   text-align: right;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0.25rem 0;
+}
+
+tr td:last-of-type {
+  padding-right: 0.5rem;
 }
