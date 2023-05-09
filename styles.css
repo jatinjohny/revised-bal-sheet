@@ -1,13 +1,153 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
-  font-size: 16pc;
 }
 
+/* For screen Reader only --start-- */
+span[class~="sr-only"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* For screen Reader only --end-- */
+
+html {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+/* For debugging purposes --start-- */
 .red-border {
   border: 1px solid rgb(255, 0, 127);
+}
+.purple-border {
+  border: 1px solid rgb(125, 0, 255);
+}
+.green-border {
+  border: 1px solid rgb(127, 255, 0);
 }
 
 .no-border {
   border: none;
+}
+/* For Debugging purpoese --end--  */
+
+.container {
+  width: 70%;
+  max-width: 960px;
+  /* padding: 0.5rem; */
+  margin: 0 auto;
+}
+
+/* header section --start-- */
+header {
+  padding: 1.5rem 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+header .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 1.5rem;
+}
+
+header .flex span:first-of-type {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header .flex span:last-of-type {
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* header section --end-- */
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 -2px;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  background-color: #0a0a23;
+  color: #f5f6f7;
+}
+
+#years span {
+  width: 4rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.table-wrap {
+  padding: 0.5rem calc(1rem + 2px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.current {
+  font-style: italic;
+}
+
+table caption {
+  position: absolute;
+  top: -2.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0f62b6;
+}
+
+tr.data {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(213, 241, 248) 50%,
+    white 50% 100%
+  );
+}
+
+tbody tr.data th {
+  width: calc((100% - 12rem));
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-left: 0.25rem;
+  font-weight: 500;
+}
+
+tbody td {
+  width: 4rem;
+  text-align: right;
+  padding-top: 0.5rem;
+  vertical-align: top;
+}
+
+.description {
+  display: block;
+  font-style: italic;
+  padding: 1rem 0 0.5rem;
+}
+
+tr[class="total"] {
+  border-bottom: 4px double rgb(77, 75, 75);
+  font-weight: 600;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+tr[class="total"] td {
+  text-align: right;
+  padding-top: 0.5rem;
 }

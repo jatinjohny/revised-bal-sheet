@@ -6,11 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <title>Excercise - Balance Sheet</title>
 </head>
 
 <body>
+    <div class="container red-border">
+        <header class="green-border">
+            <h1 class="flex red-border">
+                <span class="green-border">AcmeWidgetCorp</span>
+                <span class="green-border">Balance Sheet</span>
+            </h1>
+        </header>
+        <main>
+            <div id="years" aria-hidden="true">
+                <span class="year purple-border">2021</span>
+                <span class="year purple-border">2022</span>
+                <span class="year purple-border">2023</span>
+            </div>
+            <div class="table-wrap green-border">
+                <table>
+                    <caption>Assets</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2021</span></th>
+                            <th><span class="sr-only year">2022</span></th>
+                            <th class="current"><span class="sr-only year">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="red-border">
+                        <tr class="data purple-border">
+                            <th>Cash
+                                <span class="description">This is the cash we currently have on hand.</span>
+                            </th>
+                            <td class="green-border">$25</td>
+                            <td class="green-border">$30</td>
+                            <td class="green-border current">$28</td>
+                        </tr>
+                        <tr class="data purple-border">
+                            <th>Checking
+                                <span class="description">Our primary transactional account.</span>
+                            </th>
+                            <td class="green-border">$25</td>
+                            <td class="green-border">$30</td>
+                            <td class="green-border current">$28</td>
+                        </tr>
+                        <tr class="data purple-border">
+                            <th>Savings
+                                <span class="description">Funds set aside for emergencies.</span>
+                            </th>
+                            <td class="green-border">$500</td>
+                            <td class="green-border">$600</td>
+                            <td class="green-border current">$728</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total<span class="sr-only">Assets</span></th>
+                            <td>$579</td>
+                            <td>$736</td>
+                            <td class="current green-border">$809</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+                <table>
+                    <caption>Liabilities</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2021</span></th>
+                            <th><span class="sr-only year">2022</span></th>
+                            <th class="current"><span class="sr-only year">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="pruple-border">
+                        <tr class="data red-border">
+                            <th>Loans
+                                <span class="description">The outstanding balance on our startup loan.</span>
+                            </th>
+                            <td class="green-border">$500</td>
+                            <td class="green-border">$250</td>
+                            <td class="green-border current">$0</td>
+                        </tr>
+                        <tr class="data purple-border">
+                            <th>Expenses
+                                <span class="description">Annual aniticipated expenses, such as payroll.</span>
+                            </th>
+                            <td class="green-border">$200</td>
+                            <td class="green-border">$300</td>
+                            <td class="green-border current">$400</td>
+                        </tr>
+                        <tr class="data purple-border">
+                            <th>Credit
+                                <span class="description">The outstanding balance on our credit card.</span>
+                            </th>
+                            <td class="green-border">$50</td>
+                            <td class="green-border">$60</td>
+                            <td class="green-border current">$75</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total<span class="sr-only">Liabilities</span></th>
+                            <td>$750</td>
+                            <td>$600</td>
+                            <td class="current green-border">$475</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <caption>Net Worth</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2021</span></th>
+                            <th><span class="sr-only year">2022</span></th>
+                            <th class="current"><span class="sr-only year">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="purple-border">
+                        <tr class="total">
+                            <th>Total<span class="sr-only">Net Worth</span></th>
+                            <td class="green-border">$750</td>
+                            <td class="green-border">$600</td>
+                            <td class="current green-border">$475</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
